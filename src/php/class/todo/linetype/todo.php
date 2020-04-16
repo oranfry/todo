@@ -1,5 +1,5 @@
 <?php
-namespace linetype;
+namespace todo\linetype;
 
 class todo extends \Linetype {
     function __construct() {

@@ -1,5 +1,5 @@
 <?php
-namespace blend;
+namespace todo\blend;
 
 class todos extends \Blend
 {
