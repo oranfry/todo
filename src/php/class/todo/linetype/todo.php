@@ -10,11 +10,11 @@ class todo extends \Linetype {
             (object) [
                 'name' => 'description',
                 'type' => 'multiline',
-                "fuse" => 't.description',
+                "fuse" => '{t}.description',
             ],
         ];
         $this->unfuse_fields = [
-            't.description' => ':description',
+            '{t}.description' => ':{t}_description',
         ];
     }
 
