@@ -14,7 +14,10 @@ class todo extends \Linetype {
             ],
         ];
         $this->unfuse_fields = [
-            '{t}.description' => ':{t}_description',
+            '{t}.description' => (object) [
+                'expression' => ':{t}_description',
+                'type' => 'text',
+            ],
         ];
     }
 
