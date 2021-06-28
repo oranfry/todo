@@ -7,17 +7,14 @@ class todo extends \Linetype {
         $this->links = [];
         $this->fields = null;
         $this->fields = [
-            (object) [
-                'name' => 'description',
-                'type' => 'multiline',
-                "fuse" => '{t}.description',
-            ],
+            'description' => function($records) : string {
+                return $records['/']->description;
+            },
         ];
         $this->unfuse_fields = [
-            '{t}.description' => (object) [
-                'expression' => ':{t}_description',
-                'type' => 'text',
-            ],
+            'description' => function($line, $oldline) : string {
+                return $line->description;
+            },
         ];
     }
 
