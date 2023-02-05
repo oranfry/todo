@@ -8,13 +8,9 @@ class todo extends \jars\Linetype
     {
         $this->table = 'todo';
 
-        $this->fields = [
-            'description' => fn ($records) : string => $records['/']->description,
-        ];
+        $this->simple_strings('description');
 
-        $this->unfuse_fields = [
-            'description' => fn ($line, $oldline) : string => $line->description,
-        ];
+        $this->fields['created'] = fn ($records) : string => $records['/']->created;
     }
 
     function validate($line)
