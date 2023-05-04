@@ -1,9 +1,12 @@
 {
-    "name": "oranfry/todo",
-    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "todo\\": "classes"
         }
-    }
+    },
+    "name": "oranfry/todo",
+    "require": {
+        "oranfry/simple-fields": "*"
+    },
+    "version": "1.0.0"
 }
