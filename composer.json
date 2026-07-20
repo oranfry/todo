@@ -1,12 +1,11 @@
 {
     "autoload": {
         "psr-4": {
-            "todo\\": "classes"
+            "OranFry\\ToDo\\Linetypes\\": ""
         }
     },
     "name": "oranfry/todo",
     "require": {
         "oranfry/simple-fields": "*"
-    },
-    "version": "1.0.0"
+    }
 }

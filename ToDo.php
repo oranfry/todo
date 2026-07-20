@@ -1,10 +1,10 @@
 <?php
 
-namespace todo\linetype;
+namespace OranFry\ToDo\Linetypes;
 
-use simplefields\traits\SimpleFields;
+use OranFry\SimpleFields\Traits\SimpleFields;
 
-class todo extends \jars\Linetype
+class ToDo extends \OranFry\Jars\Core\Linetype
 {
     use SimpleFields;
 
